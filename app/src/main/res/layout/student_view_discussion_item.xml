@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravaity="center"
+        android:id="@+id/student_response_item_linear_layout_id">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:cardCornerRadius="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/student_response_item_Image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/student_response_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            />
+
+        <TextView
+            android:id="@+id/student_response_item_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Email"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:id="@+id/student_response_item_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discussion Category"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:id="@+id/student_response_item_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discussion Topic"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/student_give_response_item_response_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Give Response"
+            android:background="@drawable/admin_corners"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/student_view_response_item_response_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/student_give_response_item_response_button"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="View Response"
+            android:background="@drawable/admin_corners"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
